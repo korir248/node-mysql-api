@@ -20,7 +20,7 @@ const app = express();
 
 //Show all patients
 app.get('/patients', (req,res) =>{
-    //let post = {fname: 'Eugene', lname: 'Korir', email: 'korir@gmail.com', phone_number: '0712829006' }
+    
     let sql = 'SELECT * FROM patients';
     db.query(sql, (err, result)=>{
         if (err) throw err;
